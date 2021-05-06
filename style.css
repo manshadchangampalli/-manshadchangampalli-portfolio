@@ -1,0 +1,23 @@
+/* header */
+
+#portfolio {
+    font-size: 30px;
+}
+#portfolio span{
+    color: crimson;
+}
+
+.skills span{
+    color: rgba(255, 255, 255, 0.527);
+}
+.skills span:hover{
+    color: crimson
+}
+body{
+    background-image: url('images/background.jpg');
+}
+
+/* header :end */
+
+/* leftsection */
+
