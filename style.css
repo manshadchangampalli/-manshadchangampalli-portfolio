@@ -6,6 +6,7 @@
 * {
   margin: 0;
   padding: 0; 
+  z-index: 1;
 }
 
 
@@ -37,8 +38,11 @@ body {
 .navbar.sticky #portfolio span{
     color: white;
 }
+.navbar.sticky #portfolio{
+  color: #00154f;
+}
 .navbar.sticky a span{
-    color: #fff;
+    color: #00154f;
 }
 
 .navbar.sticky{
@@ -53,6 +57,9 @@ body {
 }
 .navitems span:hover {
   color: #f4af1b;
+}
+.navbar.sticky span:hover {
+  color: #ffffff;
 }
 #home{
   height:100vh;
@@ -242,27 +249,105 @@ body {
 
 /* iconsection ended */
 /* Skill Section Start */
-
+.skills-section{
+  color: #973434d7;
+ 
+}
 .skills-title{
   font-weight: 800;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   margin-top: 5rem;
+  color: rgba(255, 255, 255, 0.356);
+  font-family: 'Ubuntu';
+  letter-spacing: 2px;
 }
 .skills-subtitle{
   font-weight: 700;
   font-size: 30px;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.479);
+  font-family: 'Ubuntu';
+  letter-spacing: 3px;
+}
+.skills-container p{
+  text-align: start;
+  color: rgba(255, 255, 255, 0.363);
+}
+.skills-data{
+  background-color: #000000;
+  margin-bottom: 30px;
+  color: #f4af1b;
+  box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.541);
+}
+.fa-paint-brush{
+  transform: rotate(0deg);
+}
+.skills-container{
+  text-align: center;
+}
+.skills-data{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 600;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  margin-bottom: 20px;
+  
+}
+.skills-icon{
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #f4af1b;
+  transform: rotate(0deg);
+}
+.skills-names{
+  display: flex;
+  align-items: center;
+}
+.skills-bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: -10;
+}
+.skills-html{
+  width: 95%;
+}
+.skills-css{
+  width: 80%;
+}
+.skills-js{
+  width: 50%;
+}
+.skills-ux{
+  width: 75%;
+}
+.skills-python{
+  width: 52%;
 }
 
 
+/* skills left section is finished  */
+/* skill right section */
 
+.skills-right{
+  margin-top: 107px;
 
-
-
-
-
-
-
-
+}
+.skills-bootstrap{
+  width: 82%;
+}
+.skills-java{
+  width: 25%;
+}
+.skills-mysql{
+  width: 55%;
+}
 
 
 
@@ -354,5 +439,24 @@ body {
   margin-bottom: 50px;
   font-size: 30;
   
+}
+.skills-right {
+  margin-top: 0px;
+}
+.skills-subtitle {
+  font-weight: 700;
+  font-size: 25px;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.479);
+  font-family: 'Ubuntu';
+  letter-spacing: 2px;
+}
+.skills-title {
+  font-weight: 800;
+  margin-bottom: 4rem;
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.356);
+  font-family: 'Ubuntu';
+  letter-spacing: 2px;
 }
 }
