@@ -311,24 +311,29 @@ body {
   left: 0;
   bottom: 0;
   background-color: rgb(255, 255, 255);
-  height: .25rem;
+  height: .35rem;
   border-radius: .5rem;
   z-index: -10;
 }
 .skills-html{
   width: 95%;
+  background-color: rgb(15, 145, 15);
 }
 .skills-css{
   width: 80%;
+  background-color: rgb(96, 196, 15);
 }
 .skills-js{
   width: 50%;
+  background-color: rgb(241, 227, 25);
 }
 .skills-ux{
   width: 75%;
+  background-color: rgb(144, 209, 24);
 }
 .skills-python{
   width: 52%;
+  background-color: rgb(241, 227, 25);
 }
 
 
@@ -341,15 +346,28 @@ body {
 }
 .skills-bootstrap{
   width: 82%;
+  background-color: rgb(93, 189, 15);
 }
 .skills-java{
   width: 25%;
+  background-color: rgb(219, 72, 14);
 }
 .skills-mysql{
   width: 55%;
+  background-color: rgb(247, 243, 31);
 }
+/* skills right section end */
 
+/* projects section started */
 
+.projects-section{
+  height: 100vh;
+}
+.projects-title{
+  text-align: center;
+  margin-top: 5rem;
+  font-family: 'Ubuntu';
+}
 
 
 
