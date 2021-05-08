@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    
     <script
       src="https://kit.fontawesome.com/ea84ef979c.js"
       crossorigin="anonymous"
@@ -43,7 +44,7 @@
             >
           </li>
           <li class="nav-item">
-            <a class="navitems nav-link" href="#"><span>About</span></a>
+            <a class="navitems nav-link" href="#about"><span>About</span></a>
           </li>
           <li class="nav-item">
             <a class="navitems nav-link" href="#"><span>Skills</span></a>
@@ -58,7 +59,7 @@
       </div>
     </nav>
 
-<!-- home -->
+    <!-- home -->
 
     <section id="home">
       <div class="container">
@@ -68,14 +69,14 @@
               <h4>Hello, My Name Is</h4>
               <h1>Manshad Changampalli</h1>
               <div class="developer">
-                <h4>And I'm a <span>Developer</span></h4>
+                <h4>And I'm a <span class="autotext">.</span></h4>
                 <button>Hire Me</button>
               </div>
             </div>
           </div>
           <div class="col-md-6 col-xs-6 image-box">
             <div class="right-side">
-              <div class="image"></div>
+              <div class="image image-fluid"></div>
               <div class="arrwbox">
                 <div class="arrowicn">
                   <a class="icn" href="#home"
@@ -88,9 +89,35 @@
         </div>
       </div>
     </section>
+    <section class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="aboutdiv">
+              <h1>About Me</h1>
+              <div class="about">
 
-<!-- home end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- home end -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed('.autotext',{
+    strings:[' .','Fullstack Developer.','AI Engineer.','Web Designer.','Freelancer.'],
+    typeSpeed:120,
+    backSpeed:120,
+    loop:true,
+})
+    </script>
+
     <script src="app.js"></script>
+    
+    
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -101,6 +128,5 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>

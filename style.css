@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@400;500;700&display=swap');
+/* ::-webkit-scrollbar{
+  display: none; */
+/* } */
 * {
   margin: 0;
   padding: 0;
+  
 }
 html {
   scroll-behavior: smooth;
 }
 body {
   background-color: #000000;
-  height: 200vh;
+  height: auto;
 }
 /* header */
 .navbar {
@@ -41,24 +46,29 @@ body {
 .navitems span {
   color: rgba(255, 255, 255, 0.527);
   margin-right: 35px;
+  word-spacing: 5px;
   transition:  color 0.5s ease;
 }
 .navitems span:hover {
   color: crimson;
 }
-
+#home{
+  height: 100vh;
+  overflow: hidden;
+}
 /* header :end */
 
 /* leftsection */
 .left-side {
-  margin-top: 215px;
+  margin-top: 290px;
   margin-left: 50px;
 }
 .left-side h1 {
-  color: crimson;
-  font-size: 35px;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 30px;
   font-weight: 500;
   word-spacing: 4px;
+  font-family: 'Itim', cursive;
 }
 .left-side h4 {
   color: rgba(255, 255, 255, 0.575);
@@ -66,13 +76,16 @@ body {
 }
 .left-side span {
   color: crimson;
-  font-size: 35px;
-  font-weight: 500;
+  word-spacing: 3px;
+  font-weight: 700;
+  font-size: 30;
 }
+
+
 .left-side button {
   color: rgb(255, 255, 255);
   background-color: crimson;
-  border: 2px solid white;
+  border: 2.4px solid white;
 
   outline: none;
   border-radius: 7px;
@@ -90,7 +103,7 @@ body {
   width: 500px;
   height: 500px;
   background-image: url("images/background2.jpg");
-  margin-top: 125px;
+  margin-top: 190px;
 }
 .fas {
   color: rgb(0, 0, 0);
@@ -98,13 +111,14 @@ body {
   text-shadow:2px 2px 5px #5f0719;
 }
 .arrowicn {
-  background-color: crimson;
+  background-color: rgba(233, 216, 219, 0.815);
   display: inline;
   padding: 6px 9px;
   border-radius: 50px;
   position: fixed;
   right: 30px;
   bottom: 30px;
+  z-index: 99;
   box-shadow: 5px 5px 5px -3px rgba(105, 103, 103, 0.212),inset 5px 5px 5px -1px rgba(255, 255, 255, 0.3);
 }
 
@@ -113,20 +127,96 @@ body {
   margin: 4px 2px;
 }
 
+/* rightsection finished */
+/* about section started */
+
+.about-section{
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+  
+}
+.aboutdiv{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutdiv h1{
+  font-weight: 800;
+  text-shadow: 1px 1px 4px  rgba(255, 255, 255, 0.4);
+  color: rgb(0, 0, 0);
+
+}
+.about{
+  background-color: #000000;
+  margin-left: 0px;
+  width:80%;
+  height:450px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow:1px 1px 7px 1px rgba(255, 255, 255, 0.336) ;
+}
+
 @media (max-width: 480px) {
   #portfolio {
     font-size: 40px;
   }
-  .image {
-    margin-top: 0px;
-    width: 500px;
-    height: 350px;
-    background-image: url(images/background2.jpg);
-    overflow: hidden;
-  }
+  
   .navbar {
     position: fixed;
     z-index: 5;
     width: 100%;
   }
+  .left-side {
+    margin-top: 190px;
+    margin-left: 26px;
+
+    
+    
+}
+.image {
+  margin-top: 0px;
+  width: 500px;
+  height: 350px;
+  background-image: url(images/background3.jpg);
+  
+  
+}
+
+.left-side h1 {
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 20px;
+  font-weight: 500;
+  word-spacing: 2px;
+  font-family: 'Itim', cursive;
+}
+.left-side h4 {
+  color: rgba(255, 255, 255, 0.575);
+  word-spacing: 2px;
+  font-size: 20px;
+}
+.left-side span {
+  
+  color: crimson;
+  font-size: 20px;
+  font-weight: 500;
+  
+  font-family: 'Ubuntu', sans-serif;
+}
+.left-side button {
+  color: rgb(255, 255, 255);
+  background-color: crimson;
+  border: 2.4px solid white;
+
+  outline: none;
+  border-radius: 7px;
+  padding: 5px 10px;
+  margin-top: 2rem;
+}
+.navbar.mobile{
+  padding: 10px;
+  background-color: crimson;
+}
 }
