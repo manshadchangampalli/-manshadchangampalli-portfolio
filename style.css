@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@400;500;700&display=swap');
-/* ::-webkit-scrollbar{
-  display: none; */
-/* } */
+::-webkit-scrollbar{
+ display: none;
+}
 * {
   margin: 0;
   padding: 0;
@@ -131,7 +131,7 @@ body {
 /* about section started */
 
 .about-section{
-  background-color: #000000;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 43));
   width: 100%;
   height: 100vh;
   
@@ -142,6 +142,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  
 }
 .aboutdiv h1{
   font-weight: 800;
@@ -150,7 +152,7 @@ body {
 
 }
 .about{
-  background-color: #000000;
+  
   margin-left: 0px;
   width:80%;
   height:450px;
@@ -158,6 +160,47 @@ body {
   border-radius: 15px;
   box-shadow:1px 1px 7px 1px rgba(255, 255, 255, 0.336) ;
 }
+.whoiam h3{
+  color: #fff;
+  font-family: 'Itim', cursive;
+  font-weight: 100;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-size: 30;
+  
+}
+.whoiam p{
+  color: rgba(255, 255, 255, 0.712);
+  font-family: 'Ubuntu', sans-serif; 
+  font-weight: 300;
+  font-size: 22px;
+  word-spacing: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
   #portfolio {
@@ -218,5 +261,14 @@ body {
 .navbar.mobile{
   padding: 10px;
   background-color: crimson;
+}
+.whoiam h3{
+  color: #fff;
+  font-family: 'Itim', cursive;
+  font-weight: 100;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  font-size: 30;
+  
 }
 }
