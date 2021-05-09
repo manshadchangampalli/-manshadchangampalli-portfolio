@@ -131,7 +131,7 @@ body {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  z-index: 99;
+  z-index: 9;
   box-shadow: 5px 5px 5px -3px rgba(105, 103, 103, 0.212),inset 5px 5px 5px -1px rgba(255, 255, 255, 0.3);
 }
 
@@ -257,7 +257,7 @@ body {
   font-weight: 800;
   margin-bottom: 4rem;
   margin-top: 5rem;
-  color: rgba(255, 255, 255, 0.356);
+  color: rgba(255, 255, 255, 0.753);
   font-family: 'Ubuntu';
   letter-spacing: 2px;
 }
@@ -265,13 +265,13 @@ body {
   font-weight: 700;
   font-size: 30px;
   text-align: start;
-  color: rgba(255, 255, 255, 0.479);
+  color: rgba(255, 255, 255, 0.781);
   font-family: 'Ubuntu';
   letter-spacing: 3px;
 }
 .skills-container p{
   text-align: start;
-  color: rgba(255, 255, 255, 0.363);
+  color: rgba(255, 255, 255, 0.603);
 }
 .skills-data{
   background-color: #000000;
@@ -317,23 +317,23 @@ body {
 }
 .skills-html{
   width: 95%;
-  background-color: rgb(15, 145, 15);
+  background-color: rgb(255, 255, 255);
 }
 .skills-css{
   width: 80%;
-  background-color: rgb(96, 196, 15);
+  background-color: rgb(255, 255, 255);
 }
 .skills-js{
   width: 50%;
-  background-color: rgb(241, 227, 25);
+  background-color: rgb(255, 255, 255);
 }
 .skills-ux{
   width: 75%;
-  background-color: rgb(144, 209, 24);
+  background-color: rgb(255, 255, 255);
 }
 .skills-python{
   width: 52%;
-  background-color: rgb(241, 227, 25);
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -341,38 +341,134 @@ body {
 /* skill right section */
 
 .skills-right{
-  margin-top: 107px;
+  margin-top: 157px;
 
 }
 .skills-bootstrap{
   width: 82%;
-  background-color: rgb(93, 189, 15);
+  background-color: rgb(255, 255, 255);
 }
 .skills-java{
   width: 25%;
-  background-color: rgb(219, 72, 14);
+  background-color: rgb(255, 255, 255);
 }
 .skills-mysql{
   width: 55%;
-  background-color: rgb(247, 243, 31);
+  background-color: rgb(255, 255, 255);
 }
 /* skills right section end */
 
 /* projects section started */
 
 .projects-section{
-  height: 100vh;
+  height: auto;
 }
 .projects-title{
   text-align: center;
   margin-top: 5rem;
   font-family: 'Ubuntu';
+  color: rgba(255, 255, 255, 0.521);
 }
+.projects-section img{
+  height: auto;
+  width: 100px;
+}
+.project-div{
+  height: 265px;
+  
+ left: 62px;
+ top: 162px;
+ border-radius: 30px;
+ background-color: #04060C;
+ border: 2px solid #FFFFFF;
+ padding: .75rem 2rem;
+ margin-top: 3rem;
 
+}
+.project-div-portfolio{
+  height: 265px;
+}
+.project-heading{
+ 
+ margin-left: 0px;
+ font-size: 1.4rem;
+ font-weight: bold;
+margin-top: 1rem;
 
+color: rgba(255, 255, 255, 0.70);
 
-
-
+}
+.project-div h4{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 1rem;
+  margin-bottom: 0px;
+  /* letter-spacing: 1px;
+  word-spacing: 2px; */
+  color: rgba(255, 255, 255, 0.6);
+}
+.date-project{
+  font-size: 13px;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.329);
+}
+.project-div-p{
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  /* letter-spacing: 1px;
+  word-spacing: 2px; */
+  color: rgba(255, 255, 255, 0.6);
+}
+.project-div a{
+  text-decoration: double;
+  color:#f4af1b;
+}
+.project-div a:hover{
+  text-decoration: underline;
+  color:#f4af1b;
+}
+.projects-lnkimg{
+  display: flex;
+  justify-content: space-between;
+}
+.projects-lnkimg img{
+  width: 53%;
+  margin-top: -28px;
+  margin-right: -22px;
+}
+.projects-lnkimg{
+  margin-top: 10px;
+}
+.img-myportfolio{
+  margin-top: -35px;
+}
+.dateAndHeading{
+  display: flex;
+  justify-content: space-between;
+}
+.dateAndHeading-google{
+  display: flex;
+  justify-content: space-between;
+}
+.dateAndHeading-portfolio{
+  display: flex;
+  justify-content: space-between;
+}
+.dateAndHeading-p{
+  font-size: 10px;
+  font-weight: 300;
+  color: #ffffffa6;
+  margin-top: 20px;
+}
+.date-project{
+  font-size: 13px;
+  margin-top: 1rem;
+}
 
 
 @media (max-width: 480px) {
@@ -449,32 +545,122 @@ body {
   padding: 10px;
   background-color: #f4af1b;
 }
-.whoiam h3{
-  color: #fff;
-  font-family: 'Itim', cursive;
-  font-weight: 100;
-  margin-top: -20px;
-  margin-bottom: 50px;
-  font-size: 30;
-  
-}
+
 .skills-right {
   margin-top: 0px;
 }
 .skills-subtitle {
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 20px;
   text-align: start;
   color: rgba(255, 255, 255, 0.479);
   font-family: 'Ubuntu';
   letter-spacing: 2px;
+  text-align: center;
 }
 .skills-title {
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 4rem;
   margin-top: 0rem;
   color: rgba(255, 255, 255, 0.356);
   font-family: 'Ubuntu';
   letter-spacing: 2px;
+  font-size: 25px;
+}
+.project-div{
+  height: auto;
+  left: 62px;
+  top: 162px;
+  border-radius: 30px;
+  background-color: #04060C;
+  border: 2px solid #FFFFFF;
+  padding: .75rem 2rem;
+  margin-top: 3rem;
+
+}
+.projects-lnkimg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.projects-lnkimg img{
+  width: 100%;
+  margin-top: 0px;
+  margin-right: -22px;
+}
+.img-myportfolio{
+  margin-top: 0px;
+}
+.skills-text{
+  font-size: 15px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.project-heading{
+ 
+  margin-left: 0px;
+  font-size: 1.4rem;
+  font-weight: bold;
+ margin-top: 1rem;
+ 
+ color: rgba(255, 255, 255, 0.70);
+ 
+ }
+ .project-div h4{
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 13px;
+   line-height: 28px;
+   margin-top: 1rem;
+   margin-bottom: 0px;
+   /* letter-spacing: 1px;
+   word-spacing: 2px; */
+   color: rgba(255, 255, 255, 0.6);
+ }
+ .project-div-p{
+   font-family: 'Ubuntu';
+   font-style: normal;
+   font-weight: bold;
+   font-size: 14px;
+   /* letter-spacing: 1px;
+   word-spacing: 2px; */
+   color: rgba(255, 255, 255, 0.6);
+ }
+ .project-div a{
+   text-decoration: double;
+   color:#f4af1b;
+ }
+ .dateAndHeading-google{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dateAndHeading-portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dateAndHeading-portfolio p{
+  font-size: 13px;
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.329);
+
+ }
+.dateAndHeading-google p{
+  font-size: 13px;
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.329);
+
+}
+.projects-title{
+  text-align: center;
+  margin-top: 5rem;
+  font-family: 'Ubuntu';
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.363);
+}
+.arrowicn {
+  display: none;
 }
 }
