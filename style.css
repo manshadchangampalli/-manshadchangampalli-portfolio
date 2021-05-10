@@ -82,6 +82,7 @@ body {
 .left-side h4 {
   color: rgba(255, 255, 255, 0.575);
   word-spacing: 3px;
+  
 }
 
 .left-side span {
@@ -91,22 +92,40 @@ body {
   font-size: 30;
 }
 
-
-.left-side button {
+.homepage-btn{
+  margin-top: 40px;
+}
+.left-side .button {
   color: rgb(0, 0, 0);
   background-color: #f4af1b;
   border: 2.4px solid white;
   font-weight: 700;
-
-  outline: none;
   border-radius: 7px;
   padding: 5px 10px;
   margin-top: 2rem;
+  text-decoration: none;
 }
-.left-side button:hover {
+.left-side .button:hover {
   background-color: #000000;
   color: #f4af1b;
   border: 2px solid #f4af1b;
+}
+.btn-cv{
+  background-color: #000000;
+  color: #f4af1b;
+  border: 2.4px solid #f4af1b;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 5px 10px;
+
+}
+.left-side .btn-cv:hover{
+  background-color: #f4af1b;
+  color: #000000;
+  border: 2px solid #000;
+  text-decoration: none;
 }
 /* .left-side finished */
 /* right side  */
@@ -196,56 +215,10 @@ body {
   margin-right: 40px;
 }
 
-/* about section started */
 
-.about-section{
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(43, 43, 43));
-  width: 100%;
-  height: 100vh;
-  
-}
-.aboutdiv{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  
-}
-.aboutdiv h1{
-  font-weight: 800;
-  text-shadow: 1px 1px 4px  rgba(255, 255, 255, 0.4);
-  color: rgb(0, 0, 0);
 
-}
-.about{
-  
-  margin-left: 0px;
-  width:80%;
-  height:450px;
-  margin-top: 30px;
-  border-radius: 15px;
-  box-shadow:1px 1px 7px 1px rgba(255, 255, 255, 0.336) ;
-}
-.whoiam h3{
-  color: #fff;
-  font-family: 'Itim', cursive;
-  font-weight: 100;
-  margin-top: 50px;
-  margin-bottom: 80px;
-  font-size: 30;
-  
-}
-.whoiam p{
-  color: rgba(255, 255, 255, 0.712);
-  font-family: 'Ubuntu', sans-serif; 
-  font-weight: 300;
-  font-size: 22px;
-  word-spacing: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
+
 
 /* iconsection ended */
 /* Skill Section Start */
@@ -368,6 +341,13 @@ body {
   margin-top: 5rem;
   font-family: 'Ubuntu';
   color: rgba(255, 255, 255, 0.521);
+  margin-bottom:-10px;
+}
+.project-subtitle{
+  color: rgba(255, 255, 255, 0.795);
+   text-align: center;
+   margin-top: 0;
+   font-family: 'Itim', cursive;
 }
 .projects-section img{
   height: auto;
@@ -393,7 +373,8 @@ body {
  margin-left: 0px;
  font-size: 1.4rem;
  font-weight: bold;
-margin-top: 1rem;
+ margin-top: 1rem;
+
 
 color: rgba(255, 255, 255, 0.70);
 
@@ -401,7 +382,7 @@ color: rgba(255, 255, 255, 0.70);
 .project-div h4{
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 18px;
   line-height: 28px;
   margin-top: 1rem;
@@ -418,7 +399,7 @@ color: rgba(255, 255, 255, 0.70);
 .project-div-p{
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 18px;
   /* letter-spacing: 1px;
   word-spacing: 2px; */
@@ -471,6 +452,80 @@ color: rgba(255, 255, 255, 0.70);
 }
 
 
+/* PROJECT SECTION END */
+/* ABOUT SECTION STARTED */
+
+
+.about-section{
+  background-color: #000;
+  height: 100vh;
+  margin-top: 100px;
+}
+.about-title{
+  text-align: center;
+  color: #ffffffb0;
+  font-weight: 800;
+  font-family: 'Ubuntu';
+  font-size: 36px;
+
+}
+
+.about-section .text{
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  margin-top: 50px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.301);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 480px) {
   #portfolio {
     font-size: 25px;
@@ -503,7 +558,7 @@ color: rgba(255, 255, 255, 0.70);
   margin-right: 10px;
 }
 .image {
-  margin-top: 0px;
+  margin-top: 5px;
   width: 500px;
   height: 350px;
   background-image: url(images/background3.jpg);
@@ -521,25 +576,44 @@ color: rgba(255, 255, 255, 0.70);
 .left-side h4 {
   color: rgba(255, 255, 255, 0.575);
   word-spacing: 2px;
-  font-size: 20px;
+  font-size: 17px;
 }
 .left-side span {
   
   color: #f4af1b;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   
   font-family: 'Ubuntu', sans-serif;
 }
-.left-side button {
+.homepage-btn{
+  margin-top: 20px;
+}
+.left-side .button {
   color: rgb(0, 0, 0);
   background-color: #f4af1b;
   border: 2.4px solid white;
-
   outline: none;
   border-radius: 7px;
-  padding: 5px 10px;
+  padding: 3px 6px;
   margin-top: 2rem;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 35px;
+  font-size: 13px;
+}
+.btn-cv{
+  background-color: #000000;
+  color: #f4af1b;
+  border: 2.4px solid #f4af1b;
+  border-radius: 7px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 3px 6px;
+  width: 90px;
+  height: 35px;
+  font-size: 13px;
+
 }
 .navbar.mobile{
   padding: 10px;
@@ -566,6 +640,9 @@ color: rgba(255, 255, 255, 0.70);
   font-family: 'Ubuntu';
   letter-spacing: 2px;
   font-size: 25px;
+}
+.projects-section{
+  height:310vh;
 }
 .project-div{
   height: auto;
@@ -609,7 +686,7 @@ color: rgba(255, 255, 255, 0.70);
  .project-div h4{
    font-family: 'Ubuntu';
    font-style: normal;
-   font-weight: bold;
+   font-weight: lighter;
    font-size: 13px;
    line-height: 28px;
    margin-top: 1rem;
@@ -621,7 +698,7 @@ color: rgba(255, 255, 255, 0.70);
  .project-div-p{
    font-family: 'Ubuntu';
    font-style: normal;
-   font-weight: bold;
+   font-weight: lighter;
    font-size: 14px;
    /* letter-spacing: 1px;
    word-spacing: 2px; */
@@ -662,5 +739,23 @@ color: rgba(255, 255, 255, 0.70);
 }
 .arrowicn {
   display: none;
+}
+.project-subtitle {
+  color: rgba(255, 255, 255, 0.595);
+  text-align: center;
+  margin-top: 11px;
+  font-size: 11px;
+  font-family: 'Itim', cursive;
+}
+.about-section .text{
+  font-size: 18px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  margin-top: 0px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.301);
+}
+.about-title{
+  font-size: 25px;
 }
 }
