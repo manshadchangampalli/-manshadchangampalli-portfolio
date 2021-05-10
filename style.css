@@ -62,7 +62,7 @@ body {
   color: #ffffff;
 }
 #home{
-  height:100vh;
+  height:auto;
   overflow: hidden;
 }
 /* header :end */
@@ -162,58 +162,62 @@ body {
 /* rightsection finished */
 /* icons section */
 
-
-
 .icns{
   
-  height: auto;
-  width: 100%;
   display: flex;
+  width: 100%;
+  align-items: center;
   justify-content: center;
-  opacity: 80%;
-  
+  margin-top: -38px;
 }
-
-.icns h4{
-  margin: 0;
-  padding: 0;
-}
-.icns h2{
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  margin-left: 0px;
-  color: rgba(255, 255, 255, 0.863);
-}
-.icns h1{
- font-size: 20px;
- text-align: center;
- color: #f4af1b;
-
+.icns-ptag{
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.527);
  
 }
-.icns p{
+.forflex{
+  display: flex;
+  padding: 0;
+  margin-right: 50px;
+}
+.icns-ptag p{
   margin: 0;
   padding: 0;
-  color: rgba(255, 255, 255, 0.616);
-  font-size: 9px
+  font-size: 12px;
 }
-.projects-icon{
-  background-color: #000000fb;
-  height:31px;
-  width: 32px;  
+.icns-ptag h1{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
   color: #f4af1b;
-  border-radius: 100%;
-  text-align: center; 
 }
-.fa-mug-hot{
-  color: #f4af1b;
-  transform: rotate(0deg);
+.project-icons {
+  margin-left: -4.2rem;
+  margin-top: -0.25rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 25px;
+  
 }
-.projects-home{
-  display: flex;
-  margin-right: 40px;
+.language-icons {
+  margin-left: -2rem;
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 25px;
 }
+.experience-icons{
+  margin-left: -2rem;
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 25px;
+}
+.coffee-icons{
+  margin-left: -2.5rem;
+  margin-top: 0rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 25px;
+}
+
 
 
 
@@ -335,13 +339,14 @@ body {
 
 .projects-section{
   height: auto;
+  margin-bottom: 100px;
 }
 .projects-title{
   text-align: center;
   margin-top: 5rem;
   font-family: 'Ubuntu';
   color: rgba(255, 255, 255, 0.521);
-  margin-bottom:-10px;
+  margin-bottom:-5px;
 }
 .project-subtitle{
   color: rgba(255, 255, 255, 0.795);
@@ -355,7 +360,6 @@ body {
 }
 .project-div{
   height: 265px;
-  
  left: 62px;
  top: 162px;
  border-radius: 30px;
@@ -454,60 +458,148 @@ color: rgba(255, 255, 255, 0.70);
 
 /* PROJECT SECTION END */
 /* ABOUT SECTION STARTED */
+/* .about-margin{
+  margin: 50px 10px;
 
+}
 
 .about-section{
   background-color: #000;
-  height: 100vh;
+  height: auto;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .about-title{
   text-align: center;
-  color: #ffffffb0;
+  color: #ffffff65;
   font-weight: 800;
   font-family: 'Ubuntu';
   font-size: 36px;
+  margin-bottom: 50px;
 
+}
+.whoiam{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border: 2px solid #ffffff1e;
+  padding: 30px;
+  padding-left: 130px;
+  height: 300px;
+    
+}
+.whoiam p{
+  
+  font-size: 25px;
+  font-weight: 800;
+  
+    
 }
 
 .about-section .text{
   font-size: 25px;
   letter-spacing: 1.5px;
   word-spacing: 3px;
-  margin-top: 50px;
+  margin-top: 0px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.301);
+  line-height: 2;
+  color: rgba(0, 0, 0, 0.473);
+}
+/* about section end */
+/* contact section */
+
+/* .contact-section{
+  background-color: rgb(255, 255, 255);
+  height: auto;
 }
 
+.contact-image{
+  background-color: #f4af1b;
+  height: 500px;
+  margin-top: 100px;
+  border: 2px solid #f4af1b;
+  margin-bottom: 100px;
+  border-radius: 20px 0px 0px 20px;
+}
+.contact-form{
+  background-color: #00000000;
+  margin-top: 100px;
+  height: 500px;
+  border: 2px solid white;
+  margin-bottom: 100px;
+  border-radius:  0px 20px 20px 0px ;
+} */ 
+.fstlstnm{
+  display: flex;
+  justify-content: space-around;
+}
+.input-group{
+  margin:  10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-section-1{
+  border-radius: 20px 0px 0px 20px;
+}
+.form-section{
+  border-radius: 0px 20px 20px 0px;
+  padding: 1rem 2.5rem 1rem 1rem;
+}
 
+.input-group label{
+  color: rgb(136,136,136);
+  position: absolute;
+  top: 10px;
+  transition: 0.5s ease-in-out;
+}
+.input-group input{
+  border: none;
+  padding:7px;
+  outline: none;
+  caret-color: #00154f;
+  margin-top: 5px;
+  border-bottom: 1px solid #c9c9c98a;
+}
+/* .input-group textarea{
+  border: none;
+  padding:7px;
+  outline: none;
+  margin-top: 5px;
+  border-bottom: 1px solid #c9c9c98a;
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.input-group input:focus~label,
+.input-group input:valid~label{
+   color: #00154f;
+   top: -10px;
+}
+.submit-btn{
+  width: 100%;
+  margin-left: 10px;
+  background-color: #00154f;
+  color: #f4af1b;
+  padding: 6px 0px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  
+}
+.submit-btn:hover{
+  background-color: #0a3099;
+}
+.footer-section{
+  background-color: #5c5c5c5d;
+  width: 100%;
+  height: auto;
+}
+.footer a{
+  font-size: 35px;
+  color: #000000;
+}
+.footer a:hover{
+  font-size: 35px;
+  color: #f4af1b;
+}
 
 
 
@@ -544,19 +636,8 @@ color: rgba(255, 255, 255, 0.70);
     margin-left: 26px;
     
 }
-.icns{
-  margin-left: 20px;
-}
-.projects-home:nth-child(1){
-  width: 58px;
-}
-.projects-home:nth-child(3){
-  width: 89px;
-}
-.projects-home{
-  display: flex;
-  margin-right: 10px;
-}
+
+
 .image {
   margin-top: 5px;
   width: 500px;
@@ -642,7 +723,7 @@ color: rgba(255, 255, 255, 0.70);
   font-size: 25px;
 }
 .projects-section{
-  height:310vh;
+  height:270vh;
 }
 .project-div{
   height: auto;
@@ -758,4 +839,112 @@ color: rgba(255, 255, 255, 0.70);
 .about-title{
   font-size: 25px;
 }
+
+
+
+
+
+
+/* icons section */
+
+.icns{
+  
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: -38px;
+}
+.icns-ptag{
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.527);
+ 
+}
+.forflex:nth-child(1){
+  display: flex;
+  padding: 0;
+  margin-right: 36px;
+  width: 37px;
+  height: 38px;
+  margin-left: 15px;
+  
+}
+.forflex:nth-child(4){
+  display: flex;
+  padding: 0;
+  margin-right: 0px;
+  width: 40px;
+  height: 38px;
+  
+}
+.forflex:nth-child(2){
+  display: flex;
+  padding: 0;
+  margin-right: 36px;
+  width: 37px;
+  height: 38px;
+  
+}
+.forflex:nth-child(3){
+  display: flex;
+  padding: 0;
+  margin-right: 36px;
+  width: 57px;
+  height: 38px;
+  
+}
+
+.icns-ptag p{
+  margin: 0;
+  padding: 0;
+  font-size: 7px;
+}
+.icns-ptag h1{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  color: #f4af1b;
+}
+.project-icons {
+  margin-left: -1.2rem;
+  margin-top: -0.25rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 20px;
+  
+}
+.language-icons {
+  margin-left: -1.2rem;
+  margin-top: -0.2rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 20px;
+}
+.experience-icons {
+  margin-left: -18px;
+  margin-top: -3px;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 20px;
+}
+.coffee-icons {
+  margin-left: -1.1rem;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 20px;
+}
+
+.fstlstnm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.form-section{
+  border-radius: 0px 0px 20px 20px;
+  padding: 0px 25px 6px 8px;
+}
+.form-section-1{
+  border-radius: 20px 20px 0px 0px;
+}
+
+
+
+/* iconsection ended */
 }
