@@ -34,11 +34,13 @@ function check(){
         icon1.style.display="none" ;  
         icon2.style.display='block';
         error.style.display='none'; 
+        email.style.color="green"
         
     }else{
-         
+        email.style.color="red"
         icon1.style.display="block" ;  
         icon2.style.display='none';
         error.style.display='block';  
+        email.attr.value="";
     }
 }
