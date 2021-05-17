@@ -539,7 +539,10 @@ color: rgba(255, 255, 255, 0.70);
 .input-group textarea{
   width: 100%;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 0px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c9c9c98a;
 }
 .input-group{
   margin:  10px;
@@ -555,7 +558,55 @@ color: rgba(255, 255, 255, 0.70);
   border-radius: 0px 20px 20px 0px;
   padding: 1rem 2.5rem 1rem 1rem;
 }
-
+.iconsofemail{
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  
+}
+.iconsofemail span{
+  transform: rotateY(0deg);
+  height: 25px;
+  width: 25px;
+  border: 2px solid;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  display: none;
+}
+.iconsofemail span.icon1{
+  color: #e74c3c;
+}
+.iconsofemail span.icon2{
+  color: #27ae60;
+}
+.error-text{
+  text-align: end;
+  display: inline;
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  background-color: #e74c3c;
+  padding: 2px 15px;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+}
+.error-text::before{
+  position: absolute;
+  content: '';
+  height: 8px;
+  width: 8px;
+  background:#e74c3c;
+  right: 10px;
+  top: -3.3px;
+  transform: rotate(45deg);
+  
+}
+/* .error-text p{
+  background-color: #e74c3c;
+  
+} */
 .input-group label{
   color: rgb(136,136,136);
   position: absolute;
@@ -577,12 +628,25 @@ color: rgba(255, 255, 255, 0.70);
   margin-top: 5px;
   border-bottom: 1px solid #c9c9c98a;
 } */
-
-.input-group input:focus~label,
 .input-group input:valid~label{
-   color: #00154f;
+  color: #009242;
+  top: -10px;
+}
+.input-group input:focus~label{
+   color: rgba(255, 0, 0, 0.527);
    top: -10px;
 }
+.input-group textarea:focus~label{
+   color: rgba(255, 0, 0, 0.514);
+   top: -10px;
+}
+.input-group textarea:valid~label{
+  color: green;
+  top: -10px;
+}
+
+
+
 .submit-btn {
   width: 100%;
   margin-left: 10px;
@@ -1007,13 +1071,32 @@ color: rgba(255, 255, 255, 0.70);
   margin-top: -35px;
   font-size: 15px;
 }
+.navbar.sticky a span{
+  color: #ffffff;
+}
+.navbar.sticky .navbar-nav{
+  background-color: #f4af1b;
+}
 .navbar-nav{
   background-color: #000000;
 }
 #contact{
   padding: 1.5rem;
 }
-
+.error-text{
+  
+  font-size:10px ;
+}
+.iconsofemail span{
+  transform: rotateY(0deg);
+  height: 17px;
+  width: 17px;
+  border: 2px solid;
+  border-radius: 50%;
+  line-height: 12px;
+  text-align: center;
+  font-size: 10px;
+}
 
 /* iconsection ended */
 }
