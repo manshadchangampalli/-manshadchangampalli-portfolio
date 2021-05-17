@@ -35,6 +35,9 @@ body {
 .navbar{
     transition: all 0.5s ease;
 }
+.navbar button {
+  outline: none !important;
+}
 .navbar.sticky #portfolio span{
     color: white;
 }
@@ -98,9 +101,9 @@ body {
 .left-side .button {
   color: rgb(0, 0, 0);
   background-color: #f4af1b;
-  border: 2.4px solid white;
+  border: 1px solid white;
   font-weight: 700;
-  border-radius: 7px;
+  border-radius: 3px;
   padding: 5px 10px;
   margin-top: 2rem;
   text-decoration: none;
@@ -108,13 +111,13 @@ body {
 .left-side .button:hover {
   background-color: #000000;
   color: #f4af1b;
-  border: 2px solid #f4af1b;
+  border: 1px solid #f4af1b;
 }
 .btn-cv{
   background-color: #000000;
   color: #f4af1b;
-  border: 2.4px solid #f4af1b;
-  border-radius: 7px;
+  border: 1px solid #f4af1b;
+  border-radius: 3px;
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
@@ -124,7 +127,7 @@ body {
 .left-side .btn-cv:hover{
   background-color: #f4af1b;
   color: #000000;
-  border: 2px solid #000;
+  border: 1px solid #000;
   text-decoration: none;
 }
 /* .left-side finished */
@@ -351,8 +354,9 @@ body {
 .project-subtitle{
   color: rgba(255, 255, 255, 0.795);
    text-align: center;
-   margin-top: 0;
-   font-family: 'Itim', cursive;
+   margin-top: 3px;
+   font-family: 'Ubuntu';
+   font-size: 13px;
 }
 .projects-section img{
   height: auto;
@@ -421,9 +425,9 @@ color: rgba(255, 255, 255, 0.70);
   display: flex;
   justify-content: space-between;
 }
-.projects-lnkimg img{
+.projects-lnkimg img {
   width: 53%;
-  margin-top: -28px;
+  margin-top: -17px;
   margin-right: -22px;
 }
 .projects-lnkimg{
@@ -573,19 +577,19 @@ color: rgba(255, 255, 255, 0.70);
    color: #00154f;
    top: -10px;
 }
-.submit-btn{
+.submit-btn {
   width: 100%;
   margin-left: 10px;
-  background-color: #00154f;
-  color: #f4af1b;
+  background-color: #000000;
+  color: #ffffff;
   padding: 6px 0px;
   border-radius: 5px;
   margin-top: 15px;
   margin-bottom: 10px;
-  
+  border: 1px solid white;
 }
 .submit-btn:hover{
-  background-color: #0a3099;
+  background-color: #f4af1b;
 }
 .footer-section{
   background-color: #5c5c5c5d;
@@ -605,7 +609,42 @@ color: rgba(255, 255, 255, 0.70);
 
 
 
+@media (max-width: 1199px){
+  
+  
+  .skills-right {
+    margin-top: 180px;
+}
+}
 
+@media (max-width: 991px){
+  
+  .project-div-portfolio{
+    height: auto;
+  }
+  .project-div{
+    height: auto;
+  }
+  .skills-right {
+    margin-top: 229px;
+}
+}
+
+
+
+
+@media (max-width: 767px){
+  .form-section-1{
+    border-radius: 20px 20px 0px 0px;
+  }
+  .form-section{
+    border-radius: 0px 0px 20px 20px;
+    padding: 1rem 2.5rem 1rem 1rem;
+  }
+  .skills-right {
+    margin-top: 6px;
+}
+  }
 
 
 
@@ -673,9 +712,9 @@ color: rgba(255, 255, 255, 0.70);
 .left-side .button {
   color: rgb(0, 0, 0);
   background-color: #f4af1b;
-  border: 2.4px solid white;
+  border: 1px solid white;
   outline: none;
-  border-radius: 7px;
+  border-radius: 3px;
   padding: 3px 6px;
   margin-top: 2rem;
   margin-bottom: 20px;
@@ -686,8 +725,8 @@ color: rgba(255, 255, 255, 0.70);
 .btn-cv{
   background-color: #000000;
   color: #f4af1b;
-  border: 2.4px solid #f4af1b;
-  border-radius: 7px;
+  border: 1px solid #f4af1b;
+  border-radius: 3px;
   font-weight: 700;
   text-decoration: none;
   padding: 3px 6px;
@@ -723,7 +762,7 @@ color: rgba(255, 255, 255, 0.70);
   font-size: 25px;
 }
 .projects-section{
-  height:270vh;
+  height:auto;
 }
 .project-div{
   height: auto;
@@ -930,6 +969,10 @@ color: rgba(255, 255, 255, 0.70);
   color: rgba(255, 255, 255, 0.781);
   font-size: 20px;
 }
+.footer a {
+  font-size: 22px;
+  color: #000000;
+}
 
 .fstlstnm{
   display: flex;
@@ -942,8 +985,15 @@ color: rgba(255, 255, 255, 0.70);
 }
 .form-section-1{
   border-radius: 20px 20px 0px 0px;
-}
 
+}
+.form-section-1 h5{
+  margin-top: -35px;
+  
+}
+.navbar-nav{
+  background-color: #000000;
+}
 
 
 /* iconsection ended */
